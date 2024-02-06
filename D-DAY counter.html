@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D-day></title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>D-day</h1>
+    <div id="d-day-container">
+      <div class="d-day-child-container">
+        <span id="days">0</span>
+        <span>day(s)</span>
+      </div>
+      <div class="d-day-child-container">
+        <span id="hours">0</span>
+        <span>hour(s)</span>
+      </div>
+      <div class="d-day-child-container">
+        <span id="min">0</span>
+        <span>minute(s)</span>
+      </div>
+      <div class="d-day-child-container">
+        <span id="sec">0</span>
+        <span>second(s)</span>
+      </div>
+    </div>
+    <div id="d-day-message"></div>
+    <div id="target-selector">
+      <input id="target-year-input" class="target-input" size="5" /> -
+      <input id="target-month-input" class="target-input" size="5" /> -
+      <input id="target-date-input" class="target-input" size="5" />
+    </div>
+
+    <button onclick="starter()" class="btn">Countdown Start</button>
+    <button onclick="resetTimer()" class="btn">timer reset</button>
+  </body>
+</html>
